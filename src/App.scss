@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$fontPoppines: "Poppins", sans-serif;;
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  color: #000;
+  font-family: $fontPoppines;
+}
+
+a{
+  color: inherit;
+
+}
+
+p{
+  margin: 0;
+}
+header{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  a{
+    font-size: 20px;
+  }
+}
+
+.post-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 20px;
+
+  .input-item{
+    width: 100%;
+
+    p.input-error{
+      color: #d63e3e;
+    }
+  }
+
+  input, textarea{
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  button{
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+}
+
+.post-area{
+  max-width: 600px;
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+
+  .post-item{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    h1{
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+  }
+
+}
+
+.poss-section{
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.user-log-info{
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img{
+    width: 40px;
+    height: 40px;
+
+  }
+}
+
+.login-card{
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+
+  button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #cdc;
+  }
+}
+
+
+.reaction-cont{
+  display: flex;
+  gap: 5px;
+  margin: 10px 0 0;
+
+  button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    &.reacted{
+      background-color: #f4a3a3;
+      border: 1px solid #f4a3a3;
+
+      span{
+        // display: block;
+        // // transform: scale(1.6);
+        // transform-origin: center;
+      }
+    }
+  }
+}
