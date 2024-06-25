@@ -74,7 +74,7 @@ export const Post = () => {
     return(
         <>  
             <div className="poss-section">
-                <h1>Welcome to post!</h1>
+                <h1>Welcome to post!!</h1>
 
                 <form className="post-form" onSubmit={handleSubmit(handleFormSubmit)} >
                     <div className='input-item'>
